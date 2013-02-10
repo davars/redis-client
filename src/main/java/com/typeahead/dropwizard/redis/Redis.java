@@ -2,13 +2,14 @@ package com.typeahead.dropwizard.redis;
 
 import java.util.Map;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
 
 
 import com.yammer.dropwizard.lifecycle.Managed;
-import com.yammer.dropwizard.logging.Log;
 
 /**
  * Redis client managed by DropWizard
@@ -17,9 +18,9 @@ import com.yammer.dropwizard.logging.Log;
  */
 public class Redis extends JedisPool implements Managed {
 	
-	private static final Log LOG = Log.forClass(Redis.class);
-	
-	/**
+	private final Logger LOG = LoggerFactory.getLogger(Redis.class);
+
+    /**
 	 * create a new Redis client
 	 * @param config - JedisPoolConfig settings
 	 * @param host - redis host

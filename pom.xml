@@ -2,13 +2,13 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.typeahead.dropwizard</groupId>
   <artifactId>redis-client</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   <name>Redis Client</name>
   
   
   	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<dropwizard.version>0.5.1</dropwizard.version>
+		<dropwizard.version>0.6.1</dropwizard.version>
 		<jedis.version>2.1.0</jedis.version>
 	</properties>
 
